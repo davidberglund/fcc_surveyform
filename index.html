@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<main class="grid-container">
+  <header id="header">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <div id="form-container">
+    <form id="survey-form">
+      <div id="InputFields" class="InputFields">
+      <label id="name-label" for="Name">Name</label>
+      <input required id="name" name="name" placeholder="Enter your name">
+      <label id="email-label" for="email">Email</label>
+      <input required id="email" type="email"  name="email" placeholder="Enter your Email">
+      <label id="number-label" for="age"">Age (optional)</label>
+      <input type="number" id="number" min="10" max="120" name="age" placeholder="Age">
+    </div>
+      <br>
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" class="currentRole" name="" placeholder="Select current role">
+        <option value="">Select current role</option>
+        <option value="Student">Student</option>
+        <option value="FullTimeJob">Full Time Job</option>
+        <option value="FullTimeLearner">Full Time Learner</option>
+        <option value="PreferNotToSay">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select>
+      <br>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <div id="wouldYouRecommend" class="wouldYouRecommend">
+      <label for="RecommendChoice1">Definitely</label>
+      <input type="radio" id="RecommendChoice1" name="recommend" value="Definitely">
+      <label for="RecommendChoice2">Maybe</label>
+      <input type="radio" id="RecommendChoice2" name="recommend" value="Maybe">
+      <label for="RecommendChoice3">Not sure</label>
+      <input type="radio" id="RecommendChoice3" name="recommend" value="NotSure">
+      </div>
+      <br>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <div class="improvements">
+      <label for="Front-endProjects">Front-end Projects</label>
+      <input type="checkbox" id="" name="Front-endProjects" value="Front-endProjects">
+      <label for="Back-endProjects">Back-end Projects</label>
+      <input type="checkbox" id="" name="Back-endProjects" value="Back-endProjects">
+      <label for="DataVisualization">Data Visualization</label>      
+      <input type="checkbox" id="" name="DataVisualization" value="DataVisualization">
+      <label for="Open Source Community">Open Source Community</label>
+      <input type="checkbox" id="" name="OpenSourceCommunity" value="OpenSourceCommunity">
+      <label for="GitterHelpRooms">Gitter help rooms</label>
+      <input type="checkbox" id="" name="GitterHelpRooms" value="GitterHelpRooms">
+      <label for="Videos">Videos</label>
+      <input type="checkbox" id="" name="Videos" value="Videos">
+      <label for="CityMeetups">City Meetups</label>
+      <input type="checkbox" id="" name="CityMeetups" value="CityMeetups">
+      <label for="Wiki">Wiki</label>
+      <input type="checkbox" id="" name="Wiki" value="Wiki">
+      <label for="Forum">Forum</label>
+      <input type="checkbox" id="" name="Forum" value="Forum">
+      <label for="AdditionalCourses">Additional Courses</label>
+      <input type="checkbox" id="" name="AdditionalCourses" value="AdditionalCourses">
+      </div>
+      <br>
+      <label>Any comments or suggestions?
+        <br>
+        <textarea placeholder="Enter your comment here..." rows="4"></textarea>
+      </label>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
